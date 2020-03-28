@@ -46,7 +46,8 @@ class Schizophrenia(discord.Client):
         # handle messages
         if self.stat['speak']:
             sp_fp = TemporaryFile()
-            speech = gtts.gTTS('{0.author.nick}: {0.content}'.format(msg), self.stat['lang'])
+            # speech = gtts.gTTS('{0.author.nick}: {0.content}'.format(msg), self.stat['lang'])
+            speech = gtts.gTTS(msg.content, lang=self.stat['lang'])
             speech.write_to_fp(sp_fp)
 
             if self.stat['vclient']:

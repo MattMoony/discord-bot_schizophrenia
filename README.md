@@ -3,7 +3,7 @@ _I'm hearing voices_
 
 ---
 
-![banner](media/banner.jpg)
+![banner](media/docs/banner.jpg)
 
 ## About
 
